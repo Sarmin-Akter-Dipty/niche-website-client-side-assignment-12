@@ -18,11 +18,11 @@ const AddPhones = () => {
         <div className="add-service">
             <h2>Add A New Phone</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
-                <textarea {...register("description")} placeholder="Description" />
-                <input type="number" {...register("price")} placeholder="Price" />
-                <input {...register("img")} placeholder="Image url" />
-                <input type="submit" />
+                <input className="rounded" {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
+                <textarea className="rounded" {...register("description")} placeholder="Description" />
+                <input className="rounded" type="number" {...register("price")} placeholder="Price" />
+                <input className="rounded" {...register("img")} placeholder="Image url" />
+                <input className="btn-color-2 border-0 rounded" type="submit" />
             </form>
         </div>
     );

@@ -5,6 +5,7 @@ import AddPhones from './Pages/Admin/AddPhones/AddPhones';
 import MakeAdmin from './Pages/Admin/MakeAdmin/MakeAdmin';
 import ManageProducts from './Pages/Admin/ManageProducts/ManageProducts';
 import Banner from './Pages/Banner/Banner';
+import Contact from './Pages/Contact/Contact';
 import DashBoard from './Pages/DashBoard/DashBoard';
 import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
@@ -29,12 +30,14 @@ function App() {
             <Route exact path="/">
               <Banner></Banner>
               <Products></Products>
-              <AddPhones></AddPhones>
+              <Contact></Contact>
+
             </Route>
             <Route path="/home">
               <Banner></Banner>
               <Products></Products>
-              <AddPhones></AddPhones>
+              <Contact></Contact>
+
             </Route>
             <Route path="/addphones">
               <AddPhones></AddPhones>
@@ -50,6 +53,7 @@ function App() {
             </Route>
             <Route path="/explore">
               <Explores></Explores>
+              <AddPhones></AddPhones>
             </Route>
             <PrivateRoute path="/reviews">
               <Reviews></Reviews>
