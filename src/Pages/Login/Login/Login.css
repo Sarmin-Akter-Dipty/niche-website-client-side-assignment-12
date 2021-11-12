@@ -1,0 +1,11 @@
+.size form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .size form input{
+    width: 60%;
+    margin-bottom: 10px;
+    
+}

@@ -1,0 +1,20 @@
+.img img{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+.cart{
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:#F9F7FF;
+   
+    
+}
+.btn-color{
+    /* background-color:  rgb(80, 184, 111); */
+    background-color: #76CBD0;
+}

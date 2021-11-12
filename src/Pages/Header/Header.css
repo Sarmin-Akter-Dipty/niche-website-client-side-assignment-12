@@ -1,0 +1,32 @@
+.items {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(218, 214, 214);
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+  }
+  .items:hover {
+    color: rgb(176, 89, 226);
+  }
+.site-logo{
+    width: 100px;
+    height:70px;
+  }
+  .bg-color{
+     
+      background-color: #66BEC2
+  }
+
+
+  @media only screen and (min-width:350px) and(max-width:991px) {
+    .header{
+      width: 100%;
+      height: 100%;
+    }
+    
+  }
+ 
