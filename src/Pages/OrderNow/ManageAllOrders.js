@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import manageallpic from '../Images/download.png'
 
 const ManageAllOrders = () => {
     const [orders, setOrders] = useState([]);
@@ -50,19 +51,32 @@ const ManageAllOrders = () => {
     return (
         <div>
             <h2>All Orders::::{orders.length}</h2>
-            {orders?.map(order => <div key={order._id}>
-                <h3>Order Name: <span className="text">{order.item.name}</span></h3>
-                <div className="image-size"><img src={order.item.img} alt="" /></div>
-                <h3>User Name:{order.name}</h3>
-                <h3>User Email:{order.email}</h3>
-                <h3>User Address:{order.address}</h3>
-                <h4>Status: <span className="text-primary">{order.status}</span></h4>
-                <button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2" onClick={() => handleDelete(order._id)}>Delete</button>
-                <button className="btn-color text-white rounded px-4 py-2 border-0 my-5 mx-2" onClick={() => approveOrder(order._id)}>Approve</button>
-            </div>)}
+            <div className="row">
+                <div className="col-md-4">
+                    <img src={manageallpic} alt="" />
+                </div>
+                <div className="col-md-4">
+
+                    {orders?.map(order => <div key={order._id}>
+                        <h3>Order Name: <span className="text">{order.item.name}</span></h3>
+                        <div className="image-size"><img src={order.item.img} alt="" /></div>
+                        <h3>User Name:{order.name}</h3>
+                        <h3>User Email:{order.email}</h3>
+                        <h3>User Address:{order.address}</h3>
+                        <h4>Status: <span className="text-primary">{order.status}</span></h4>
+                        <button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2" onClick={() => handleDelete(order._id)}>Delete</button>
+                        <button className="btn-color text-white rounded px-4 py-2 border-0 my-5 mx-2" onClick={() => approveOrder(order._id)}>Approve</button>
+                    </div>)}
+
+                </div>
+                <div className="col-md-4">
+                    <img src={manageallpic} alt="" />
+                </div>
 
 
+            </div>
         </div>
+
     );
 };
 

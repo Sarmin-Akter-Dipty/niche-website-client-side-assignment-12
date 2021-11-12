@@ -11,6 +11,7 @@ import Header from './Pages/Header/Header';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
+import NotFound from './Pages/NotFound/NotFound';
 import ManageAllOrders from './Pages/OrderNow/ManageAllOrders';
 import MyOrder from './Pages/OrderNow/MyOrder';
 import OrderNow from './Pages/OrderNow/OrderNow';
@@ -70,6 +71,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>

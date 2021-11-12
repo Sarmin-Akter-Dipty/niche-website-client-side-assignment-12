@@ -13,16 +13,21 @@ import MyOrder from '../OrderNow/MyOrder';
 import ManageProducts from '../Admin/ManageProducts/ManageProducts';
 import ManageAllOrders from '../OrderNow/ManageAllOrders';
 import AdminRoute from '../Login/AdminRoute/AdminRoute';
+import dashboard from '../Images/images.jpg'
 
 
 const DashBoard = () => {
-    const { admin, logOut } = useAuth();
+    const { user, admin, logOut } = useAuth();
     let { path, url } = useRouteMatch();
 
     return (
         <div>
-            <Link to={`${url}/myorders`}><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">My Orders</button></Link>
+            {/* <Link to={`${url}/myorders`}><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">My Orders</button></Link> */}
+
+            {user?.email && <Link to="/myorders"><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">My Orders</button></Link>}
             <button onClick={logOut} className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">Log Out</button>
+            <div>  <img src={dashboard} alt="" /></div>
+
             {admin && <div>
                 <Link to={`${url}/manageallorders`}><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">Manage All Orders</button></Link>
                 <Link to={`${url}/manageproducts`}><button className="btn-color-2 text-white rounded px-4 py-2 border-0 my-5 mx-2">Manage Products</button></Link>

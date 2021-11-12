@@ -6,7 +6,7 @@ import useAuth from '../../hooks/useAuth';
 const OrderNow = () => {
     const { itemId } = useParams();
     const [item, setItem] = useState({});
-    const { user, logOut } = useAuth();
+    const { user } = useAuth();
 
     console.log(item);
     useEffect(() => {
@@ -74,9 +74,8 @@ const OrderNow = () => {
                     </div>
                 </div>
             </div>
-            {user?.email && <Link to="/myorders"><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">My Orders</button></Link>}
-            {user?.email && <Link to="/manageallorders"><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">Manage All Orders</button></Link>}
-            {user?.email && <button onClick={logOut} className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">Log Out</button>}
+            {user?.email && <Link to="/dashboard"><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">DashBoard</button></Link>}
+
         </div>
 
     );
