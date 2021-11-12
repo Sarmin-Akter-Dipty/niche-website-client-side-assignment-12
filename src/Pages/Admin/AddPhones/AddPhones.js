@@ -22,7 +22,7 @@ const AddPhones = () => {
                 <textarea className="rounded" {...register("description")} placeholder="Description" />
                 <input className="rounded" type="number" {...register("price")} placeholder="Price" />
                 <input className="rounded" {...register("img")} placeholder="Image url" />
-                <input className="btn-color-2 border-0 rounded" type="submit" />
+                <input className="btn-color-2 border-0 rounded text-white" type="submit" />
             </form>
         </div>
     );

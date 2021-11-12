@@ -32,7 +32,7 @@ const DashBoard = () => {
             {admin && <div>
                 <div>  <img src={dashboard} alt="" /></div>
                 <Link to={`${url}/manageallorders`}><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">Manage All Orders</button></Link>
-                <Link to={`${url}/addphones`}><button className="btn-color-2 rounded px-4 py-2 border-0 my-5 mx-2">Add More Phones</button></Link>
+                <Link to={`${url}/addphones`}><button className="btn-color-2 text-white rounded px-4 py-2 border-0 my-5 mx-2">Add More Phones</button></Link>
                 <Link to={`${url}/manageproducts`}><button className="btn-color-2 text-white rounded px-4 py-2 border-0 my-5 mx-2">Manage All Products</button></Link>
                 <Link to={`${url}/makeAdmin`}><button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2">Make Admin</button></Link>
             </div>}
