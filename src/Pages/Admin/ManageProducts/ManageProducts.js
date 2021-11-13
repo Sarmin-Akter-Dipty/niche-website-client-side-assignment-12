@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import manageproducts from '../../Images/images (3).jpg'
-import './MnageProducts.css'
+
 
 const ManageProducts = () => {
 
@@ -22,7 +22,7 @@ const ManageProducts = () => {
                 setChange(change + 1)
                 if (data.deletedCount) {
 
-                    alert('deleted')
+                    alert('Deleted successfully')
                     const remaining = services.filter(service => service._id !== id)
                     setServices(remaining)
                 }

@@ -18,6 +18,7 @@ import MyOrder from './Pages/OrderNow/MyOrder';
 import OrderNow from './Pages/OrderNow/OrderNow';
 import Explores from './Pages/Products/Explore/Explores';
 import Products from './Pages/Products/Products';
+import AddReview from './Pages/Reviews/AddReview';
 import Reviews from './Pages/Reviews/Reviews';
 
 function App() {
@@ -30,14 +31,14 @@ function App() {
             <Route exact path="/">
               <Banner></Banner>
               <Products></Products>
+              <Reviews></Reviews>
               <Contact></Contact>
-
             </Route>
             <Route path="/home">
               <Banner></Banner>
               <Products></Products>
+              <Reviews></Reviews>
               <Contact></Contact>
-
             </Route>
             <Route path="/addphones">
               <AddPhones></AddPhones>
@@ -53,16 +54,19 @@ function App() {
             </Route>
             <Route path="/explore">
               <Explores></Explores>
-              <AddPhones></AddPhones>
+
             </Route>
-            <PrivateRoute path="/reviews">
+            <Route path="/reviews">
               <Reviews></Reviews>
-            </PrivateRoute>
+            </Route>
             <PrivateRoute path="/ordernow/:itemId">
               <OrderNow></OrderNow>
             </PrivateRoute>
             <PrivateRoute path="/myorders">
               <MyOrder></MyOrder>
+            </PrivateRoute>
+            <PrivateRoute path="/addReview">
+              <AddReview></AddReview>
             </PrivateRoute>
             <PrivateRoute path="/manageallorders">
               <ManageAllOrders></ManageAllOrders>

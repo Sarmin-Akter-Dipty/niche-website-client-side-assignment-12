@@ -20,7 +20,7 @@ const Explores = () => {
     return (
 
         <div className="row">
-            <h1 className="my-4">Our Phones</h1>
+            <h1 className="my-4 text">Our More Explore Phones:::{users.length}</h1>
             {
                 users.map(user => <Explore key={user._id} user={user}></Explore>)
             }

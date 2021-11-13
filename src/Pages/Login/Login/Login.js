@@ -24,7 +24,7 @@ const Login = () => {
     }
     const handleLoginSubmit = e => {
         loginUser(loginData.email, loginData.password, location, history)
-        alert('ok')
+        alert('Your login successfully added')
 
         e.preventDefault()
     }

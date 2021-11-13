@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useParams } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
+
 const OrderNow = () => {
     const { itemId } = useParams();
     const [item, setItem] = useState({});
@@ -36,7 +37,7 @@ const OrderNow = () => {
     return (
         <div>
             <div className="row my-5 ">
-                <div className="col-md-4 my-5 ">
+                <div className="col-md-3 my-5">
                     <div className="image-size mt-5">
                         <img src={item?.img} alt="" />
                     </div>
@@ -47,7 +48,7 @@ const OrderNow = () => {
 
                 </div>
 
-                <div className="col-md-8">
+                <div className="col-md-9">
                     <h1 className="text-center"> Fill up your form</h1>
                     <div className="w-25 m-auto mt-5">
                         <div className="container border border d-flex justify-content-center align-items-center">

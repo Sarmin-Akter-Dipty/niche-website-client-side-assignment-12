@@ -27,7 +27,7 @@ const Register = () => {
             return
         }
         registerUser(loginData.email, loginData.password, loginData.name, location, history)
-        alert('ok')
+        alert('Your Register Successfully Added')
         e.preventDefault()
     }
     return (

@@ -15,7 +15,7 @@ const Explore = (props) => {
                 <h5>{price}$</h5>
                 <p><small>{description}</small></p>
                 <Link to={`/ordernow/${_id} `}>
-                    <button className="btn btn-color">Order Now {name.toLowerCase()}</button>
+                    <button className="btn btn-color">Purchase <span className="text-white">{name.toLowerCase()}</span></button>
                 </Link>
 
             </div>
