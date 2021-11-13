@@ -1,23 +1,23 @@
 # Welcome to MEDICAL CARE
 
-[Visit our site](https://first-project-da3e4.web.app/ "MEDICAL-CARE")
+[Visit our site](https://phone-corners.web.app/ "Phone Corner")
 
 
 ---
 # Description
 
-Medical care is what physicians and other clinicians do every day with you in offices, labs, surgery centers, and hospitals. Titrating blood pressure meds. Checking blood sugar. Adding this medication on and stopping that medication.
+World's Largest Brand Website and Marketplace. Choose Your Favorite Product and Order Now! Production Monitoring. Most Popular. Logistics Service. Best Facilities
 
 ---
 
 # Our Services
 
-1. Best Facilities
-2. Best Doctors
-3. Best price package
-4. Best Communication skills & Interpersonal skills.
-5. Dedicated Staff
+1. Easy Return Policy
+2. Trusted Website
+3. Best Price Package
+4. 24 Hour Services
+5. First Delivery && Emi Facilities
  
 ---
 
->So Welcome To visit Our Medical Care Website & Take This Awesome Facilites
+>So Welcome To visit Our Phone Corner Website & Take This Awesome Facilites
