@@ -31,7 +31,7 @@ const ManageProducts = () => {
     }
     return (
         <div>
-            <h2 className="text mb-4">Manage Products::::{services.length}</h2>
+            <h2 className="text mb-4">Manage Products : {services.length}</h2>
             <div className="row">
                 <div className="col-md-4 ">
                     <img src={manageproducts} alt="" />

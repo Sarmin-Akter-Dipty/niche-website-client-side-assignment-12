@@ -51,7 +51,7 @@ const MyOrder = () => {
     // }
     return (
         <div>
-            <h2>My Orders:{myOrders.length}</h2>
+            <h2>My Orders : {myOrders.length}</h2>
             <div className="row">
                 <div className="col-md-4">
                     <img src={myorders} alt="" />

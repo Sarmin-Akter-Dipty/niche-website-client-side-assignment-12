@@ -58,7 +58,7 @@ const ManageAllOrders = () => {
                     <img src={manageallpic} alt="" />
                 </div>
                 <div className="col-md-4">
-                    <h2>All Orders::::{orders.length}</h2>
+                    <h2>All Orders : {orders.length}</h2>
 
                     {orders?.map(order => <div key={order._id}>
                         <h3>Order Name: <span className="text">{order.item.name}</span></h3>
