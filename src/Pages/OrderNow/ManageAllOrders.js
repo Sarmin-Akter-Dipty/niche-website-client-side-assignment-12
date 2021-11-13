@@ -5,7 +5,7 @@ const ManageAllOrders = () => {
     const [orders, setOrders] = useState([]);
     const [status, setStatus] = useState(null)
     useEffect(() => {
-        fetch("http://localhost:5000/allOrders")
+        fetch("https://boiling-escarpment-36459.herokuapp.com/allOrders")
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, [status]);
@@ -15,7 +15,7 @@ const ManageAllOrders = () => {
     const handleDelete = email => {
         const proceed = window.confirm('Are you sure ,you wanted delete?');
         if (proceed) {
-            const url = `http://localhost:5000/allOrders/${email}`
+            const url = `https://boiling-escarpment-36459.herokuapp.com/allOrders/${email}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -34,7 +34,7 @@ const ManageAllOrders = () => {
     }
 
     const approveOrder = id => {
-        const url = `http://localhost:5000/myorders?id=${id}`
+        const url = `https://boiling-escarpment-36459.herokuapp.com/myorders?id=${id}`
         fetch(url, {
             method: 'PUT',
 

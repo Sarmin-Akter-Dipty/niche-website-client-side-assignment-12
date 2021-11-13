@@ -8,7 +8,7 @@ const Explores = () => {
     const [users, setusers] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/explore')
+        fetch('https://boiling-escarpment-36459.herokuapp.com/explore')
             .then(res => res.json())
             .then(data => setusers(data));
     }, [])

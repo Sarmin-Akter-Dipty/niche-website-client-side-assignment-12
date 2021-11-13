@@ -10,6 +10,8 @@ const Register = () => {
     const location = useLocation()
     const history = useHistory()
 
+    console.log(location);
+
     const { user, authError, registerUser, isLoading } = useAuth()
     console.log(user.email);
     const handleOnChange = e => {

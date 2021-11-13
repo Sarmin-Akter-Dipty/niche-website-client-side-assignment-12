@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="bg-color container my-3 rounded text-white">
                 <h1 className="my-4">Contact <span className="text">Us</span></h1>
                 <p>Connect with <u className="text">PHONE CORNERS</u> Care</p>
-                <p><small><u className="text">Ours selling phones any problem plz contact today</u></small></p>
+                <p><small><u className="text">"If you face any problem please contact with us"</u></small></p>
                 <div className="my-4">
                     <input className="mx-4 w-25 border-0 rounded px-2 " type="text" placeholder="First name" />
                     <input className="w-25 border-0 rounded px-2 " type="text" placeholder="Last name" />

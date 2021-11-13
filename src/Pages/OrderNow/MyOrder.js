@@ -7,7 +7,7 @@ const MyOrder = () => {
     const [status, setStatus] = useState(null)
     const { user } = useAuth()
     useEffect(() => {
-        fetch(`http://localhost:5000/myorders?email=${user.email}`)
+        fetch(`https://boiling-escarpment-36459.herokuapp.com/myorders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setMyOrders(data))
 
@@ -16,7 +16,7 @@ const MyOrder = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure ,you wanted delete?');
         if (proceed) {
-            const url = `http://localhost:5000/allOrders/${id}`
+            const url = `https://boiling-escarpment-36459.herokuapp.com/allOrders/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -33,22 +33,7 @@ const MyOrder = () => {
                 })
         }
     }
-    // const approveOrder = id => {
-    //     const url = `http://localhost:5000/myorders?id=${id}`
-    //     fetch(url, {
-    //         method: 'PUT',
 
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             if (data.modifiedCount) {
-    //                 setStatus(!status)
-    //             }
-    //             else {
-    //                 setStatus(false)
-    //             }
-    //         })
-    // }
     return (
         <div>
             <h2>My Orders : {myOrders.length}</h2>
@@ -64,7 +49,7 @@ const MyOrder = () => {
 
                             <h4>Status: <span className="text-primary">{order.status}</span></h4>
                             <button className="btn-color rounded px-4 py-2 border-0 my-5 mx-2" onClick={() => handleDelete(order._id)}>Delete</button>
-                            {/* <button className="bg-success text-white rounded px-4 py-2 border-0 my-5 mx-2" onClick={() => approveOrder(order._id)}>Approve</button> */}
+
                         </div>)
                     }
                 </div>

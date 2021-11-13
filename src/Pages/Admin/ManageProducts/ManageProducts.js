@@ -8,12 +8,12 @@ const ManageProducts = () => {
     const [change, setChange] = useState(0)
 
     useEffect(() => {
-        fetch('http://localhost:5000/explore')
+        fetch('https://boiling-escarpment-36459.herokuapp.com/explore')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [change]);
     const handleDelete = id => {
-        const url = `http://localhost:5000/explore/${id}`
+        const url = `https://boiling-escarpment-36459.herokuapp.com/explore/${id}`
         fetch(url, {
             method: 'DELETE'
         })

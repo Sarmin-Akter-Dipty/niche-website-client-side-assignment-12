@@ -1,11 +1,12 @@
 import React from 'react';
-import { Spinner } from 'react-bootstrap';
-import { Redirect, Route } from 'react-router';
+import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const AdminRoute = ({ children, ...rest }) => {
     const { user, admin, isLoading } = useAuth()
-    if (isLoading) { return <Spinner animation="border" variant="info" /> }
+    if (!admin || isLoading) {
+        return <Redirect to="/dashboard"></Redirect>
+    }
 
     return (
         <Route

@@ -7,7 +7,7 @@ import addallphn from '../../Images/images (3).jpg'
 const AddPhones = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/items', data)
+        axios.post('https://boiling-escarpment-36459.herokuapp.com/items', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully')
